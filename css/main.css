@@ -12,19 +12,32 @@ body {
 /* MAIN container */
 .container {
     display: flex;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
 }
 
 /* side bar content */
 .side-bar {
+    display: flex;
     width: 150px;
+    flex-direction: column;justify-content: space-between;
     background: chocolate;
+}
+
+.up-sidebar {
+    height: 340px;
+    overflow: hidden;
+    background: rgba(151, 143, 143, 0.4);
+}
+
+.down-sidebar {
+    height: 60px;
+    background: rgba(151, 143, 143, 0.4);
 }
 
 /* main content */
 .main-content {
     position: relative;
-    padding-top: 70px;
+    padding-top: 65px;
     height: 100%;
     overflow-y: scroll;
     flex-grow: 1;
@@ -32,18 +45,54 @@ body {
 }
 
 .upgrade-header {
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
-    height: 50px;
+    height: 60px;
+    text-align: right;
     background: rgba(151, 143, 143, 0.3);
     z-index: 1;
 }
 
-.selection-list {
-    display: flex;
+.btn-up {
+    background: royalblue;
 }
 
+/* main content navbar */
+.selection-list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.selection-list .in-evidence-list ul {
+    display: flex;
+    flex-direction: row ;
+    list-style: none;
+}
+
+.selection-list .in-evidence-list ul li {
+    margin-right: 10px;
+}
+
+.selection-list .in-evidence-list ul li:last-child {
+    margin-right: 0;
+}
+
+.selection-list .in-evidence-list ul li a {
+    text-decoration: none;
+    font-size: .6rem;
+}
+
+/* content section */
+.img-box {
+    width: calc(100% / 6 - .8rem);
+    height: 200px;
+    background: #fff;
+}
+
+/* recently played section */
 .recently-played {
     display: flex;
     width: 100%;
@@ -52,15 +101,47 @@ body {
     justify-content: space-around;
 }
 
-.img-box {
-    width: calc(100% / 6 - .8rem);
-    height: 200px;
-    background: #fff;
+/* created by john doe section */
+.john-doe-section {
+    display: flex;
+    margin-left: 14px;
 }
+
+.john-doe-section .img-box {
+    margin-right: 13px;
+}
+
+/* popular artist section */
+.popular-artist {
+    display: flex;
+    margin-left: 14px
+}
+
+.popular-artist .img-box {
+    width: 200px;
+    border-radius: 50%;
+} 
 
 /* FOOTER PRESS-PLAY */
 .press-play {
     display: flex;
-    height: 80px;
-    background: cadetblue;
+    height: 70px;
+    justify-content: space-between;
+    background: rgb(158, 193, 194);
 }
+
+.left-footer {
+    width: 150px;
+    background: rgba(151, 143, 143, 0.3);
+}
+
+.middle-footer {
+    width: 500px;
+    background: rgba(151, 143, 143, 0.3);
+}
+
+.right-footer {
+    width: 150px;
+    background: rgba(151, 143, 143, 0.3);
+}
+
