@@ -20,30 +20,31 @@
     <main class="container">
         <nav class="side-bar">
             <div class="up-sidebar">
-                <img class="banner mb-15" src="./img/logo.svg" alt="logo spotify">
+                <img class="banner mb-15 xs-hidden" src="./img/logo.svg" alt="logo spotify">
+                <img class="xs-visible s-hidden md-hidden lg-hidden" src="./img/logo-small.svg" alt="spotify logo">
                 <div class="home-nav mb-15">
                     <ul>
                         <li class="mb-5">
                             <a class="txt-deco" href="#">
                                 <img src="./img/home.svg" alt="home icon">
                             </a>
-                            <a class="colored-gray fz-07rem txt-deco fw-600" href="#">Home</a>
+                            <a class="colored-gray fz-07rem txt-deco fw-600 xs-hidden" href="#">Home</a>
                         </li>
                         <li class="mb-5">
                             <a class="txt-deco" href="#">
                                 <img src="./img/search.svg" alt="search icon">
                             </a>
-                            <a class="colored-gray fz-07rem txt-deco fw-600" href="#">Search</a>
+                            <a class="colored-gray fz-07rem txt-deco fw-600 xs-hidden" href="#">Search</a>
                         </li>
                         <li class="mb-5">
                             <a class="txt-deco" href="#">
                                 <img class="colored-gray" src="./img/libreria.svg" alt="libreria icon">
                             </a>
-                            <a class="colored-gray fz-07rem txt-deco fw-600" href="#">Library</a>
+                            <a class="colored-gray fz-07rem txt-deco fw-600 xs-hidden" href="#">Library</a>
                         </li>
                     </ul>
                 </div><!--end home nav-->
-                <div class="playlists">
+                <div class="playlists xs-hidden">
                     <h6 class="colored-white uppercase-text mb-5">
                         playlist
                     </h6>
@@ -97,22 +98,22 @@
                     <a href="">
                         <img class="down-app" src="./img/download.svg" alt="download icon">
                     </a>
-                    <a class="colored-gray txt-deco fz-07rem fw-500" href="#">Install app</a>
+                    <a class="colored-gray txt-deco fz-07rem fw-500 xs-hidden" href="#">Install app</a>
                 </div>
-                <hr>
+                <hr class="xs-hidden">
                 <div class="profile mt-5 mb-5">
                     <a href="#">
                         <img src="./img/profile.svg" alt="profile icon">
                     </a>
                 </div>
-                <a class="colored-white txt-deco fz-07rem fw-500" href="#">John Doe</a>
-            </div>
+                <a class="colored-white txt-deco fz-07rem fw-500 xs-hidden" href="#">John Doe</a>
+            </div><!--end of down-sidebar-->
         </nav><!--end side bar-->
         <!-- MAIN CONTENT -->
         <section class="main-content">
             <div>
                 <div class="upgrade-header">
-                    <button class="btn-up uppercase-text">upgrade</button>
+                    <button class="btn-up uppercase-text fw-600">upgrade</button>
                 </div><!--end of up-header-->
             </div>
             <div class="scrollable">
@@ -121,7 +122,7 @@
                         <ul>
                             <li>
                                 <a href="#">
-                                       in evidence
+                                    in evidence
                                 </a>
                             </li>
                             <li>
@@ -273,8 +274,8 @@
                             </h5>
                         </div>
                     </div>
-                </div>    
-            </div>
+                </div><!--end of popular artists section-->   
+            </div><!--end of scrollable section-->
         </section><!--end main content-->
     </main><!--end main container-->
     <!-- FOOTER PRESS PLAY -->
