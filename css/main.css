@@ -26,8 +26,8 @@ body {
     margin-top: 5px;
 }
 
-.ml-8 {
-    margin-left: 8px;
+.ml-5 {
+    margin-left: 5px;
 }
 
 .colored-white {
@@ -78,6 +78,11 @@ body {
 .container {
     display: flex;
     height: calc(100vh - 70px);
+}
+
+.side-bar, 
+.main-content {
+    overflow-y: hidden;
 }
 
 /* side bar content */
@@ -213,7 +218,7 @@ body {
 /* content section */
 .box {
     width: calc(100% / 6);
-    margin: 5px;
+    /* margin: 5px; */
     padding: 5px;
     text-align: center;
 }
@@ -225,14 +230,12 @@ body {
 /* recently played section */
 .recently-played {
     display: flex;
-    /* padding-left: 10px; */
-    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* created by john doe section */
 .john-doe-section {
     display: flex;
-    /* padding-left: 10px; */
 }
 
 .john-doe-section .box .box-content img {
@@ -242,7 +245,6 @@ body {
 /* popular artist section */
 .popular-artist {
     display: flex;
-    /* padding-left: 10px; */
 }
 
 .popular-artist .box .box-content img {
