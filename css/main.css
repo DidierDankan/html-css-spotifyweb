@@ -10,10 +10,57 @@ body {
 }
 
 /* UTILITIES */
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
 .colored-white {
     color: #fff;
 }
 
+.colored-gray {
+    color: #696969;
+}
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.fz-07rem {
+    font-size: .7rem;
+}
+
+.txt-deco {
+    text-decoration: none;
+}
+
+.line-height2 {
+    line-height: 2.5;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
 
 /* MAIN CONTAINER */
 .container {
@@ -24,21 +71,64 @@ body {
 /* side bar content */
 .side-bar {
     display: flex;
+    padding: 10px 10px 0px 10px;
     min-width: 150px;
     flex-direction: column;
     justify-content: space-between;
-    background: chocolate;
+    background: #000;
 }
 
 .up-sidebar {
     height: 340px;
     overflow: hidden;
-    background: rgba(151, 143, 143, 0.4);
 }
 
-.down-sidebar {
-    height: 60px;
-    background: rgba(151, 143, 143, 0.4);
+.up-sidebar .banner {
+    height: 33px;
+}
+
+.up-sidebar .home-nav ul li a img{
+    vertical-align: bottom;
+    height: 20px;
+}
+
+.plus-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #000;
+    line-height: 1.9;
+    background: #696969;
+}
+
+.up-sidebar .playlists {
+    /* height: 250px;
+    overflow-y: auto; */
+    background: gray;
+}
+.down-sidebar .down-app {
+    height: 10px;
+    vertical-align: middle;
+}
+
+.down-sidebar a {
+    display: inline-block;
+}
+
+.profile {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    background: #696969;
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.profile img {
+    height: 25px;
 }
 
 /* main content */
@@ -48,7 +138,7 @@ body {
     height: 100%;
     overflow-y: auto;
     flex-grow: 1;
-    background: rgb(0, 0, 0);
+    background: #141922;
 }
 
 .upgrade-header {
@@ -82,7 +172,7 @@ body {
 }
 
 .selection-list .in-evidence-list ul li {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .selection-list .in-evidence-list ul li:last-child {
@@ -91,7 +181,9 @@ body {
 
 .selection-list .in-evidence-list ul li a {
     text-decoration: none;
-    font-size: .6rem;
+    font-size: .7rem;
+    color: #696969;
+    font-weight: 700;
 }
 
 /* content section */
@@ -100,7 +192,6 @@ body {
     margin: 5px;
     padding: 5px;
     text-align: center;
-    background: #fff;
 }
 
 .box-content img {
