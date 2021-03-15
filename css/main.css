@@ -80,7 +80,6 @@ body {
 
 .up-sidebar {
     height: 340px;
-    overflow: hidden;
 }
 
 .up-sidebar .banner {
@@ -103,10 +102,10 @@ body {
 }
 
 .up-sidebar .playlists {
-    /* height: 250px;
-    overflow-y: auto; */
-    background: gray;
+    height: 250px;
+    overflow-y: auto;
 }
+
 .down-sidebar .down-app {
     height: 10px;
     vertical-align: middle;
