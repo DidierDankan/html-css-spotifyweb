@@ -309,6 +309,7 @@ body {
 .box-content img {
     width: 100%;
     transition: filter .3s;
+    cursor: pointer;
 }
 
 /* box content hover effect */
